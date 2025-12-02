@@ -26,12 +26,18 @@ body {
 }
 
 .button{
-  @apply flex border-2 border-[#ffeba8] w-25 h-10 justify-center items-center rounded-md 
-  shadow-[0px_5px_0px_0px_#ffe297] 
-  hover:shadow-[0px_0px_0px_0px_#ffe297] transition duration-200;
+  @apply flex border-2 border-[#abe1ab] w-25 h-10 justify-center items-center rounded-md 
+  shadow-[0px_5px_0px_0px_#abe1ab] 
+  hover:shadow-[0px_0px_0px_0px_#abe1ab] transition duration-200;
 
   &.button--default{
     @apply bg-white
   }
   
+}
+
+form{
+  input,text-area{
+    @apply border rounded-md
+  }
 }

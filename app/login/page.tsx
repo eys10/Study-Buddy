@@ -1,12 +1,12 @@
 import Link from "next/link";
+import Default from "../templates/Default";
 
 export default function Login(){
     return(
         <section>
-            <div className="flex flex-col items-center">
-                LOGIN PAGE
-                <Link href="/">Back to Home</Link>
-            </div>
+            <Default>
+                <h1>LOGIN PAGE</h1>
+            </Default>
         </section>
     )
 }

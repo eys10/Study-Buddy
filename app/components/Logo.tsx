@@ -3,7 +3,7 @@ export default function Logo(){
         <>
             <div className="flex justify-between">
             {/* logo */}
-            <h1 className="font-sans font-bold tracking-[-1px]">Study Buddy ni Ace</h1>
+            <h1 className="font-sans font-bold tracking-[-1px]">Study <span className="text-[#abe1ab]">Buddy</span> ni Ace</h1>
             </div>
         </>
     )
