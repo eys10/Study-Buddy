@@ -108,13 +108,13 @@ export default function FormChat() {
       <form
         data-loading={isLoading}
         onSubmit={(e) => handleChat(e)}
-        className="max-w-full w-full  mx-auto flex-1 sticky bottom-0 flex flex-col gap-2 p-4 bg-white border-1 border-gray-300 shadow-md rounded-lg"
+        className="max-w-full w-full mx-auto flex-1 sticky bottom-0 flex flex-col gap-2 p-4 bg-white border-1 border-gray-300 shadow-md rounded-lg"
       >
         <div className="form-control">
           <textarea
             name="message"
             placeholder="What do you want to know?"
-            className="w-full h-20 p-2 rounded-lg resize-none focus:border-none"
+            className="w-full h-20 p-2 rounded-lg resize-none focus:border-none focus:outline-none"
             onKeyDown={handleKeyDown}
             value={input}
             onChange={(e) => {
