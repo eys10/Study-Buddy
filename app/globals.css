@@ -26,18 +26,26 @@ body {
 }
 
 .button{
-  @apply flex border-2 border-[#abe1ab] w-25 h-10 justify-center items-center rounded-md 
-  shadow-[0px_5px_0px_0px_#abe1ab] 
-  hover:shadow-[0px_0px_0px_0px_#abe1ab] transition duration-200;
+  @apply flex border-2 border-[#dc2626] w-25 h-10 justify-center items-center rounded-md 
+  shadow-[0px_5px_0px_0px_#dc2626] transition duration-100 hover:shadow-[0px_0px_0px_0px_#dc2626]
+  transform hover:scale-95 cursor-pointer;
 
   &.button--default{
-    @apply bg-white
+    @apply bg-white hover:bg-red-100;
+  }
+
+  &.button--primary{
+    @apply bg-red-600 hover:bg-red-700 hover:shadow-[0px_0px_0px_0px_#dc2626] text-white border-[#82181A] shadow-[0px_5px_0px_0px_#82181A] font-bold;
   }
   
 }
 
 form{
   input,text-area{
-    @apply border rounded-md
+    @apply border rounded-md p-2 items-center
   }
+}
+
+[data-loading="true"]{
+  @apply animate-pulse
 }
